@@ -19,7 +19,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="last-modified" content="2025-02-26 21:31:38 -0500">
+    <meta http-equiv="last-modified" content="2025-02-26 21:48:45 -0500">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- meta "search-domain" used for google site search function google_search() -->
     <meta name="search-domain" value="">
@@ -222,7 +222,7 @@
 
   <div class="row">
     <div class="col-md-3">
-      <strong>Teaching:</strong> 20 min
+      <strong>Teaching:</strong> 3 min
       <br />
       <strong>Exercises:</strong> 0 min
     </div>
@@ -230,16 +230,13 @@
       <strong>Questions</strong>
       <ul>
 	
-	<li><p>How to make sure you get credit for this workshop?</p>
-</li>
-	
-	<li><p>Where are the web pages for this presentation?</p>
+	<li><p>What is SLURM?</p>
 </li>
 	
 	<li><p>What are the prerequisites for this workshop?</p>
 </li>
 	
-	<li><p>What are the ideas behind the workshop and how is it structured?</p>
+	<li><p>What topics will we cover?</p>
 </li>
 	
       </ul>
@@ -253,16 +250,13 @@
       <strong>Objectives</strong>
       <ul>
 	
-	<li><p>Make sure you are signed up for the class.</p>
+	<li><p>Understand the basic scope of SLURM for clusters.</p>
 </li>
 	
 	<li><p>Make sure you have the course material (the web pages).</p>
 </li>
 	
 	<li><p>Make sure you know the prerequisites for this class.</p>
-</li>
-	
-	<li><p>Understand the exercises and how they relate to two ARC clusters.</p>
 </li>
 	
       </ul>
@@ -277,101 +271,58 @@
 
 <p>Sign up there.</p>
 
-<h2 id="web-pages">Web Pages</h2>
-
-<p>This workshop has two major means to convey information:</p>
-<ul>
-  <li>web pages.</li>
-  <li>watch the instructor invoke commands.</li>
-</ul>
-
-<p>The web pages can be downloaded.</p>
-
 <h2 id="prequisites-for-this-workshop">Prequisites for this Workshop</h2>
 
-<p>None, if you want to watch the workshop presentation.
-There is value in just listening.</p>
-
-<p>To do the exercises, you will need to</p>
+<p>To follow along, you need to:</p>
 
 <ul>
-  <li>have an account on ARC.</li>
-  <li>know how to ssh and log onto the ARC cluster Tinkercliffs (TC); and Owl cluster.</li>
+  <li>have an account on ARC</li>
+  <li>know how to ssh and log onto the ARC cluster Tinkercliffs (TC); and Owl cluster</li>
   <li>know how to edit text files with a command-line text editor such as <code class="language-plaintext highlighter-rouge">nano</code> or <code class="language-plaintext highlighter-rouge">vi</code></li>
   <li>know how to create and move around directories on a Linux cluster (e.g. Unix Shell Basics)</li>
-  <li>know how to transfer files back and forth between your personal computer and the ARC clusters.</li>
 </ul>
 
 <h2 id="accessing-the-clusters-on-and-off-campus">Accessing the Clusters On and Off Campus</h2>
-
 <ul>
-  <li>VPN (virtual private network) needed for connections from off-campus
+  <li>ARC clusters are only accessible from VT network.</li>
+  <li><a href="https://www.nis.vt.edu/ServicePortfolio/Network/RemoteAccess-VPN.html">VPN</a> (virtual private network) needed for connections from off-campus
     <ul>
-      <li>https://www.nis.vt.edu/ServicePortfolio/Network/RemoteAccess-VPN.html</li>
+      <li>“VT Traffic over SSL VPN” connection recommended for most uses</li>
     </ul>
   </li>
-  <li>Nearly all ARC services require being on the campus network or VPN</li>
-  <li>Use “VT Traffic over SSL VPN” connection</li>
+  <li><a href="https://ood.arc.vt.edu">Open OnDemand</a> provide shell access to clusters in a web browser.</li>
 </ul>
 
-<h2 id="how-to-extract-the-web-pages">How to Extract the Web Pages.</h2>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh owl063
+</code></pre></div></div>
 
-<ul>
-  <li><strong>**</strong><strong>**</strong><strong>*** <em>this has to change with every delivery of this workshop</em> **</strong><strong>**</strong><strong>**</strong><strong>**</strong>** *</li>
-</ul>
-
-<ol>
-  <li>The files for the course are here:  <em>https://profdev-lms.tlos.vt.edu/courses/4381/files</em>
-    <ul>
-      <li>Download the latest <em>archive-job-monitoring-2024-11-08-v02.zip</em>.</li>
-    </ul>
-  </li>
-  <li>To follow along with the slides/web pages.
-    <ul>
-      <li>On your laptop, move the zip file to a new directory.</li>
-      <li>unzip the file.</li>
-      <li>under the _site directory, you will see a file:  <em>index.html</em>.</li>
-      <li>double-click on that file.  It will show in your browser and you
-can browse to all pages thereafter.</li>
-    </ul>
-  </li>
-  <li>If you want to do the exercises along with the instructor.
-    <ul>
-      <li>ssh to log in to Tinkercliffs (TC).</li>
-      <li>Create a new directory on TC where you want to work for this workshop.</li>
-      <li>We’ll go through the steps from here.</li>
-      <li>ssh to log into Owl, and again we will go through instructions.</li>
-    </ul>
-  </li>
-  <li>Note:  Almost all files that we need for the exercises are in the web pages of the workshop materials.
-    <ul>
-      <li>This makes things more portable and more easily maintained.</li>
-    </ul>
-  </li>
-  <li>The web pages for this workshop have been designed to enable students to work on their own.
-That is, they provide a fair amount of detail.</li>
-</ol>
+<div class="language-plaintext data highlighter-rouge"><div class="highlight"><pre class="highlight"><code>output from commands will appear like this, i.e., without a heading.
+</code></pre></div></div>
 
 <h2 id="overview">Overview</h2>
 
-<ul>
-  <li>ARC systems run software that spans the full spectrum of modern research computing.</li>
-  <li>SLURM (Simple Linux Utility for Resource Management) is a key tool used to manage cluster resources and job scheduling.</li>
-  <li>This workshop addresses basic Slurm scheduler interaction, cluster inspection, and job options.</li>
-  <li>The demonstrations will be predominantly via the Linux shell command line interface and will make use of “software modules” system.</li>
-  <li>Participants who already have ARC accounts are invited to follow along with the demonstrations if desired.</li>
-</ul>
+<p>ARC systems run software that spans the full spectrum of modern research computing. SLURM (Simple Linux Utility for Resource Management) is a key tool used to manage cluster resources and job scheduling and is arguably the most commonly used scheduler/resource manager among HPC centers.</p>
+
+<p>This workshop addresses basic Slurm scheduler interaction, cluster inspection, and job options. The demonstrations will be predominantly via the Linux shell command line interface and will make use of “software modules” system. Participants who already have ARC accounts are invited to follow along with the demonstrations if desired.</p>
 
 <h2 id="how-to-use-these-workshop-materials">How to Use These Workshop Materials</h2>
 
-<p>We will use the Owl cluster for almost all of the examples/exercises in this
-workshop.</p>
+<p>We will use the <a href="https://docs.arc.vt.edu/resources/compute/01owl.html">Owl</a> cluster in this workshop, but the same commands and concepts will generally work on any ARC cluster.</p>
 
 <blockquote class="keypoints">
   <h2>Key Points</h2>
   <ul>
     
-    <li><p>Although we do not go into all of the details here, most of the workshop uses the Tinkercliffs cluster, but because of how we do the exercises, most/all of the material should also be directly applicable to the Owl cluster.</p>
+    <li><p>Simple Linux Utility for Resource Management (SLURM)</p>
+</li>
+    
+    <li><p>Resource management refers to tracking the status of cluster resources.</p>
+</li>
+    
+    <li><p>Cluster resources include compute nodes and their CPUSs, memory, and GPUs.</p>
+</li>
+    
+    <li><p>SLURM also provides workload scheduling functionality.</p>
 </li>
     
   </ul>
