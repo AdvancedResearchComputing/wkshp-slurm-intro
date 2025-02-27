@@ -1,0 +1,157 @@
+current directory: /Users/ckuhlman/all-data-02/vt-materials/papers/y2024/swc-shell-programming-v02/cjk-github/shell-programming-course/.vendor/bundle/ruby/2.6.0/gems/strscan-3.1.0/ext/strscan
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20240517-91081-1q9brjf.rb extconf.rb
+checking for onig_region_memsize() in ruby.h... yes
+checking for rb_reg_onig_match() in ruby.h... no
+creating Makefile
+
+current directory: /Users/ckuhlman/all-data-02/vt-materials/papers/y2024/swc-shell-programming-v02/cjk-github/shell-programming-course/.vendor/bundle/ruby/2.6.0/gems/strscan-3.1.0/ext/strscan
+make "DESTDIR=" clean
+Makefile:175: warning: overriding commands for target `clean'
+Makefile:175: warning: ignoring old commands for target `clean'
+Makefile:182: warning: overriding commands for target `distclean'
+Makefile:182: warning: ignoring old commands for target `distclean'
+Makefile:190: warning: overriding commands for target `install-so'
+Makefile:190: warning: ignoring old commands for target `install-so'
+Makefile:200: warning: overriding commands for target `pre-install-rb-default'
+Makefile:200: warning: ignoring old commands for target `pre-install-rb-default'
+Makefile:202: warning: overriding commands for target `.sitearchdir.time'
+Makefile:202: warning: ignoring old commands for target `.sitearchdir.time'
+Makefile:212: warning: overriding commands for target `.cc.o'
+Makefile:212: warning: ignoring old commands for target `.cc.o'
+Makefile:216: warning: overriding commands for target `.cc.S'
+Makefile:216: warning: ignoring old commands for target `.cc.S'
+Makefile:220: warning: overriding commands for target `.mm.o'
+Makefile:220: warning: ignoring old commands for target `.mm.o'
+Makefile:224: warning: overriding commands for target `.mm.S'
+Makefile:224: warning: ignoring old commands for target `.mm.S'
+Makefile:228: warning: overriding commands for target `.cxx.o'
+Makefile:228: warning: ignoring old commands for target `.cxx.o'
+Makefile:232: warning: overriding commands for target `.cxx.S'
+Makefile:232: warning: ignoring old commands for target `.cxx.S'
+Makefile:236: warning: overriding commands for target `.cpp.o'
+Makefile:236: warning: ignoring old commands for target `.cpp.o'
+Makefile:240: warning: overriding commands for target `.cpp.S'
+Makefile:240: warning: ignoring old commands for target `.cpp.S'
+Makefile:244: warning: overriding commands for target `.c.o'
+Makefile:244: warning: ignoring old commands for target `.c.o'
+Makefile:248: warning: overriding commands for target `.c.S'
+Makefile:248: warning: ignoring old commands for target `.c.S'
+Makefile:252: warning: overriding commands for target `.m.o'
+Makefile:252: warning: ignoring old commands for target `.m.o'
+Makefile:256: warning: overriding commands for target `.m.S'
+Makefile:256: warning: ignoring old commands for target `.m.S'
+Makefile:260: warning: overriding commands for target `strscan.bundle'
+Makefile:260: warning: ignoring old commands for target `strscan.bundle'
+
+current directory: /Users/ckuhlman/all-data-02/vt-materials/papers/y2024/swc-shell-programming-v02/cjk-github/shell-programming-course/.vendor/bundle/ruby/2.6.0/gems/strscan-3.1.0/ext/strscan
+make "DESTDIR="
+Makefile:175: warning: overriding commands for target `clean'
+Makefile:175: warning: ignoring old commands for target `clean'
+Makefile:182: warning: overriding commands for target `distclean'
+Makefile:182: warning: ignoring old commands for target `distclean'
+Makefile:190: warning: overriding commands for target `install-so'
+Makefile:190: warning: ignoring old commands for target `install-so'
+Makefile:200: warning: overriding commands for target `pre-install-rb-default'
+Makefile:200: warning: ignoring old commands for target `pre-install-rb-default'
+Makefile:202: warning: overriding commands for target `.sitearchdir.time'
+Makefile:202: warning: ignoring old commands for target `.sitearchdir.time'
+Makefile:212: warning: overriding commands for target `.cc.o'
+Makefile:212: warning: ignoring old commands for target `.cc.o'
+Makefile:216: warning: overriding commands for target `.cc.S'
+Makefile:216: warning: ignoring old commands for target `.cc.S'
+Makefile:220: warning: overriding commands for target `.mm.o'
+Makefile:220: warning: ignoring old commands for target `.mm.o'
+Makefile:224: warning: overriding commands for target `.mm.S'
+Makefile:224: warning: ignoring old commands for target `.mm.S'
+Makefile:228: warning: overriding commands for target `.cxx.o'
+Makefile:228: warning: ignoring old commands for target `.cxx.o'
+Makefile:232: warning: overriding commands for target `.cxx.S'
+Makefile:232: warning: ignoring old commands for target `.cxx.S'
+Makefile:236: warning: overriding commands for target `.cpp.o'
+Makefile:236: warning: ignoring old commands for target `.cpp.o'
+Makefile:240: warning: overriding commands for target `.cpp.S'
+Makefile:240: warning: ignoring old commands for target `.cpp.S'
+Makefile:244: warning: overriding commands for target `.c.o'
+Makefile:244: warning: ignoring old commands for target `.c.o'
+Makefile:248: warning: overriding commands for target `.c.S'
+Makefile:248: warning: ignoring old commands for target `.c.S'
+Makefile:252: warning: overriding commands for target `.m.o'
+Makefile:252: warning: ignoring old commands for target `.m.o'
+Makefile:256: warning: overriding commands for target `.m.S'
+Makefile:256: warning: ignoring old commands for target `.m.S'
+Makefile:260: warning: overriding commands for target `strscan.bundle'
+Makefile:260: warning: ignoring old commands for target `strscan.bundle'
+compiling strscan.c
+strscan.c:244:26: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+        keyword_ids[0] = rb_intern("fixed_anchor");
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0/ruby/ruby.h:1826:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+strscan.c:244:26: note: '{' token is here
+        keyword_ids[0] = rb_intern("fixed_anchor");
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0/ruby/ruby.h:1811:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+strscan.c:244:26: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+        keyword_ids[0] = rb_intern("fixed_anchor");
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0/ruby/ruby.h:1816:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+strscan.c:244:26: note: ')' token is here
+        keyword_ids[0] = rb_intern("fixed_anchor");
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0/ruby/ruby.h:1826:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+2 warnings generated.
+linking shared-object strscan.bundle
+ld: warning: search path '/AppleInternal/Library/BuildRoots/ce725a5f-c761-11ee-a4ec-b6ef2fd8d87b/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.Internal.sdk/usr/local/lib' not found
+
+current directory: /Users/ckuhlman/all-data-02/vt-materials/papers/y2024/swc-shell-programming-v02/cjk-github/shell-programming-course/.vendor/bundle/ruby/2.6.0/gems/strscan-3.1.0/ext/strscan
+make "DESTDIR=" install
+Makefile:175: warning: overriding commands for target `clean'
+Makefile:175: warning: ignoring old commands for target `clean'
+Makefile:182: warning: overriding commands for target `distclean'
+Makefile:182: warning: ignoring old commands for target `distclean'
+Makefile:190: warning: overriding commands for target `install-so'
+Makefile:190: warning: ignoring old commands for target `install-so'
+Makefile:200: warning: overriding commands for target `pre-install-rb-default'
+Makefile:200: warning: ignoring old commands for target `pre-install-rb-default'
+Makefile:202: warning: overriding commands for target `.sitearchdir.time'
+Makefile:202: warning: ignoring old commands for target `.sitearchdir.time'
+Makefile:212: warning: overriding commands for target `.cc.o'
+Makefile:212: warning: ignoring old commands for target `.cc.o'
+Makefile:216: warning: overriding commands for target `.cc.S'
+Makefile:216: warning: ignoring old commands for target `.cc.S'
+Makefile:220: warning: overriding commands for target `.mm.o'
+Makefile:220: warning: ignoring old commands for target `.mm.o'
+Makefile:224: warning: overriding commands for target `.mm.S'
+Makefile:224: warning: ignoring old commands for target `.mm.S'
+Makefile:228: warning: overriding commands for target `.cxx.o'
+Makefile:228: warning: ignoring old commands for target `.cxx.o'
+Makefile:232: warning: overriding commands for target `.cxx.S'
+Makefile:232: warning: ignoring old commands for target `.cxx.S'
+Makefile:236: warning: overriding commands for target `.cpp.o'
+Makefile:236: warning: ignoring old commands for target `.cpp.o'
+Makefile:240: warning: overriding commands for target `.cpp.S'
+Makefile:240: warning: ignoring old commands for target `.cpp.S'
+Makefile:244: warning: overriding commands for target `.c.o'
+Makefile:244: warning: ignoring old commands for target `.c.o'
+Makefile:248: warning: overriding commands for target `.c.S'
+Makefile:248: warning: ignoring old commands for target `.c.S'
+Makefile:252: warning: overriding commands for target `.m.o'
+Makefile:252: warning: ignoring old commands for target `.m.o'
+Makefile:256: warning: overriding commands for target `.m.S'
+Makefile:256: warning: ignoring old commands for target `.m.S'
+Makefile:260: warning: overriding commands for target `strscan.bundle'
+Makefile:260: warning: ignoring old commands for target `strscan.bundle'
+/usr/bin/install -c -m 0755 strscan.bundle ./.gem.20240517-91081-1cm3r04
